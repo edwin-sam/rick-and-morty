@@ -15,7 +15,7 @@ function App() {
             <Homepage />
           </Route>
 
-          <Route exact path="/location-1">
+          <Route exact path="/location/:id">
             <Location />
           </Route>
         </Switch>
