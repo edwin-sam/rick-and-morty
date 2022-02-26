@@ -1,0 +1,37 @@
+.homepage-body {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+#locations-text {
+  color: #E4A788;
+  font-size: 1.8em;
+}
+
+.locations-container {
+  width: 50%;
+  text-align: center;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.homepage-pic {
+  width: 50%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.list-items {
+  color: #44281D;
+  font-size: 1.1em;
+}
+
+#image {
+  position: fixed;
+  width: 45%;
+  margin-top: 5%;
+  box-shadow: 0 -5px 6px 0 rgba(0, 0, 0, 0.2), 0 15px 12px 0 rgba(0, 0, 0, 0.19), 0 15px 12px 0 rgba(0, 0, 0, 0.19),   0 15px 12px 0 rgba(0, 0, 0, 0.19);
+}

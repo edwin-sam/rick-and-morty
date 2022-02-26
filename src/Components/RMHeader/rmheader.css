@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Get Schwifty";
+  src: url("../../Fonts/get-schwifty/GetSchwifty-Regular.woff2") format("woff2"),
+    url("../../Fonts/get-schwifty/GetSchwifty-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.name-container {
+  font-size: 100%;
+}
+
+.name {
+  color: #02afc5;
+  padding: 10px;
+  font-family: "GetSchwifty-Regular";
+  font-size: 2.5em;
+}
