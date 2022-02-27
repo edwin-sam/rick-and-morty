@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Get Schwifty";
+  src: url("../../Fonts/get-schwifty/GetSchwifty-Regular.woff2") format("woff2"),
+    url("../../Fonts/get-schwifty/GetSchwifty-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.location-container {
+  height: auto;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #44281D;
+}
+
+.location-container:hover {
+  cursor: default;
+}
+
+#location {
+  margin-bottom: -15px;
+  
+  font-size: 2em;
+}
+
+#dimension {
+  color: #44281D;
+  font-size: 1.5em;
+}
+
+#type {
+  margin-top: -15px;
+  font-family: "GetSchwifty-Regular";
+  color: #44281D;
+  font-size: 1.5em;
+}
+
+#residents:hover {
+  cursor: default;
+}
+
+.residents-container {
+  text-align: center;
+  color: #E4A788;
+  font-size: 1.4rem;
+  margin: 30px;
+}
+
+.residents-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container {
+  background-color: #02AFC5;
+  margin: 30px;
+  max-width: 320px;
+  padding-bottom: -50px;
+  max-height: 480px;
+  border-radius: 5%;
+}
+
+#resident-image {
+  margin: 10px 10px 0 10px;
+  border-radius: 5%;
+}
+
+#resident-info {
+  color: #44281D;
+  border-radius: 10%;
+  text-align: start;
+  margin: 5% 5% 5% 5%;
+}
+
+#resident-info:hover {
+  cursor: default;
+}
+
+#resident-image:hover {
+  filter: brightness(125%);
+  cursor: pointer;
+}

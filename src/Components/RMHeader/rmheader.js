@@ -6,7 +6,7 @@ const Header = () => {
     <>
       <div className="header-container">
         <div className="name-container">
-          <h1 className="name">Rick and Morty</h1>
+          <h1 className="name"><a href='/' style={{textDecoration: 'none', color:'#02afc5'}}>Rick and Morty</a></h1>
         </div>
       </div>
     </>
