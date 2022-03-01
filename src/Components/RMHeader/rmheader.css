@@ -9,12 +9,24 @@
 
 .name-container {
   font-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-right: 60px;
 }
 
 .name {
-  
-  padding: 10px;
   font-family: "GetSchwifty-Regular";
   font-size: 2.5em;
   text-decoration: none;
+}
+
+.obituary {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #02afc5;
+}
+
+.obituary:hover {
+  cursor: pointer;
 }

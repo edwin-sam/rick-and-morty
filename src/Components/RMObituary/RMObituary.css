@@ -1,0 +1,36 @@
+.obituary-container {
+  width: 100%; 
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  overflow: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+}
+
+.dead-character-container {
+  width: 12%;
+  height: 230px;
+  background-color: #02AFC5;
+  margin: auto;
+  border-radius: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+}
+
+#dead-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 15%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}

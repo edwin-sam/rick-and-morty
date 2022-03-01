@@ -4,6 +4,7 @@ import Header from "../src/Components/RMHeader/rmheader";
 import Homepage from "../src/Components/RMHomepage/rmhomepage";
 import Location from "../src/Components/RMLocationPage/rmlocation";
 import Character from "./Components/RMCharacterPage/rmcharacterpage";
+import Obituary from "./Components/RMObituary/RMObituary";
 
 function App() {
   return (
@@ -19,12 +20,16 @@ function App() {
           <Route exact path="/location/:id">
             <Location />
           </Route>
+
+          <Route exact path="/character/:id">
+          <Character />
+        </Route>
+          
         </Switch>
 
-        <Route exact path="/character/:id">
-            <Character />
-          </Route>
-
+        <Route exact path="/obituary">
+          <Obituary />
+        </Route>
       </Router>
     </>
   );
