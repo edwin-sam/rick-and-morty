@@ -6,6 +6,10 @@
   padding: 10px;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 #locations-text {
   color: #E4A788;
   font-size: 1.8em;

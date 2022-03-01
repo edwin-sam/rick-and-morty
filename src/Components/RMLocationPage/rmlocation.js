@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import GetLocation from "../../Actions/locationAction";
 import GetResidentsList from "../../Actions/residentsAction";
+import { Link } from "react-router-dom";
 import "./rmlocation.css";
 
 const Location = () => {
@@ -54,9 +55,19 @@ const Location = () => {
                 return (
                   <div className="image-container">
                     {resident ? (
-                      <img id="resident-image" key={i} src={resident?.image} />
+                      <Link
+                        to={`/character/${resident.id}`}
+                        id="location-name"
+                        key={i}
+                      >
+                        <img
+                          id="resident-image"
+                          key={i}
+                          src={resident?.image}
+                        />
+                      </Link>
                     ) : (
-                      console.log("hi")
+                      <h1>Loading...</h1>
                     )}
                     <div id="resident-info">
                       <h3 id="resident">{resident?.name}</h3>
