@@ -157,3 +157,7 @@
 .submit-button:active {
   background-color: #1e809d;
 }
+
+.loading {
+  margin: 50%;
+}

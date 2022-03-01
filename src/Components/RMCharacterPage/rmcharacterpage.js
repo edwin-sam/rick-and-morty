@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import GetCharacter from "../../Actions/charactersAction";
+import GetCharacter from "../../Actions/characterAction";
 import PostCharacterNotes from "../../Actions/characterNotesAction";
 import { Link } from "react-router-dom";
 import "./rmcharacterpage.css";
@@ -36,7 +36,7 @@ const Character = () => {
         <div className="character-container">
           <div className="card-container">
             <Link to={`/location/${locationID}`} id="location-name">
-              <p id="card-location">{character?.location.name}</p>
+              <p id="card-location">{character?.location?.name}</p>
             </Link>
             <section className="top-section">
               <div id="card-image-container">
@@ -114,7 +114,7 @@ const Character = () => {
           </section>
         </div>
       ) : (
-        <h1>loading...</h1>
+        <h1 className="loading">loading...</h1>
       )}
     </>
   );
