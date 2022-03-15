@@ -7,6 +7,7 @@ import "./rmlocation.css";
 const Location = () => {
   const [location, setLocation] = useState();
   const [residents, setResidents] = useState();
+  const [didLoad, setLoad] = useState();
 
   useEffect(() => {
     async function fetchLocationData() {
@@ -27,8 +28,10 @@ const Location = () => {
     fetchResidentsData();
   }, [location]);
 
+  const style = didLoad ? {} : {visibility: 'hidden'}
+
   const NoResidents = () => {
-    return residents?.length == 0 ? (
+    return residents?.length === 0 ? (
       <>
         <h1>No residents live here</h1>
       </>
@@ -61,9 +64,12 @@ const Location = () => {
                         key={i}
                       >
                         <img
+                          alt={resident?.name}
+                          style={style}
                           id="resident-image"
                           key={i}
                           src={resident?.image}
+                          onLoad={() => setLoad(true)}
                         />
                       </Link>
                     ) : (

@@ -5,6 +5,7 @@ import "./RMObituary.css";
 
 const Obituary = () => {
   const [allCharacters, setAllCharacters] = useState([]);
+  const [didLoad, setLoad] = useState();
 
   useEffect(() => {
     const getCharactersData = async () => {
@@ -13,6 +14,8 @@ const Obituary = () => {
     };
     getCharactersData();
   }, []);
+
+  const style = didLoad ? {} : {visibility: 'hidden'}
 
   return (
     <>
@@ -26,7 +29,7 @@ const Obituary = () => {
               <>
                 <div className="dead-character-container">
                   <Link to={`/character/${character.id}`}>
-                  <img id="dead-image" src={character.image} />
+                  <img style={style} id="dead-image" src={character.image} onLoad={() => setLoad(true)}/>
                   </Link>
                   <h4>{character?.name}</h4>
                 </div>
